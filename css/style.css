@@ -1,0 +1,60 @@
+#canvas{
+    height : 300px;
+    width : 900px;
+    background-color: #3e3e3e;
+    border: 1px solid black;
+}
+
+#game{
+    visibility: hidden;
+    width : 900px;
+    margin: auto;
+}
+
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+
+span.deciSec, span.sec, span.min {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+table.clock {
+    border: 0;
+    float: left;
+    text-align: left;
+}
+
+table.big {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+table.small {
+    font-size: 20px;
+    /*font-weight: bold;*/
+}
+
+#clock, #clockTop, #clockCurrent{
+    /*float: left;*/
+    margin-left: 0;
+}
+
+#author{
+    border: 0;
+    position: relative;
+    float: right;
+    text-align: left;
+    font-size: 12px;
+
+}
+
+#timeRecap {
+    visibility: hidden;
+}
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Platformer</title>
+    <meta charset="utf-8">
+    <meta name="description" content="JavaScript game platformer.">
+    <meta name="keywords" content="game arcade platformer javascript"/>
+    <meta name="author" content="Jan Hlubucek" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+</head>
+<body>
+<form id="form" onsubmit="submitForm();return false">
+    <h3 id="welcome">Welcome to my game platformer, please fill your name to continue.</h3>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" value="" placeholder="Name" maxlength="20" required/>
+    <input type="submit" value="Submit">
+</form>
+<div id="game">
+    <table id="time" border="0" class="clock small">
+        <tr>
+            <td><span id="min" class="min"></span></td>
+            <td>:</td>
+            <td><span id="sec" class="sec"></span></td>
+            <td>,</td>
+            <td><span id="deciSec" class="deciSec"></span></td>
+        </tr>
+    </table>
+    <table id="author" border="0" class="clock small">
+        <tr>
+            <td>author: </td>
+            <td>Jan Hlubuček</td>
+        </tr>
+        <tr>
+            <td>contact: </td>
+            <td>hluj00@vse.cz</td>
+        </tr>
+    </table>
+    <canvas id="canvas" height="300" width="900"></canvas>
+    <table id="tableUserName" border="0" class="clock small">
+        <tr>
+            <td><span>user name</span></td>
+            <td>:</td>
+            <td><span id="userName"></span></td>
+        </tr>
+    </table>
+    <div id="controlsText">control by ARROWS or W, A and S.</div>
+    <div id="startText">Press space to start.</div>
+
+    <table id="timeRecap" border="0" class="clock big">
+        <tr>
+            <td>tvůj čas:</td>
+            <td><span id="minCurrent" class="min"></span></td>
+            <td>:</td>
+            <td><span id="secCurrent" class="sec"></span></td>
+            <td>,</td>
+            <td><span id="deciSecCurrent" class="deciSec"></span></td>
+        </tr>
+        <tr>
+            <td>nejlepší čas:</td>
+        </tr>
+        <tr>
+            <td><span id="topPlayerName" class="min"></span></td>
+            <td><span id="minTop" class="min"></span></td>
+            <td>:</td>
+            <td><span id="secTop" class="sec"></span></td>
+            <td>,</td>
+            <td><span id="deciSecTop" class="deciSec"></span></td>
+        </tr>
+    </table>
+</div>
+</body>
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/helper.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/level.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
